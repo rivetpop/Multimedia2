@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home</title>
+        <script src="../../common/favicon.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+    </head>
+    <body>
+        <div class = "global">
+            <div class="sourdineDiv"><label class="sourdine" title="Activer la sourdine" for="sourdineCheckBox"><input type="checkbox" id="sourdineCheckBox" name="sourdine"/> Sourdine</label></div>
+            <div class="nom"><h1>Patrick Rivet</h1></div>
+            <div id="image"><img src="../../images/patou.jpg" alt="patou"/></div>
+            <h2>Bienvenue sur mon site web!</h2>
+            <p>Je vous invite à le visiter. Les rubriques disponibles, en ordre alphabétique, sont les suivantes:</p>
+            <ul>
+                <template>
+
+                </template>
+            </ul>
+        </div>
+        <video src="../../audio/bienvenu.mp3"></video>
+
+        <script id="projets" type="text/x-handlebars-template">
+            {{#each projets}}
+                <li>
+                    <a href = "../{{dir}}/index.html{{#if param}}{{param}}{{/if}}">{{nom}}
+                    {{#if color}}
+                        (<span class="color-{{color}}">{{color}}</span>)
+                    {{/if}}
+                    </a>
+                    {{#if desc}}
+                        <div>{{desc}}
+                        {{#if sujets}}
+                            <span class="sujets">
+                                <br/><br/>Sujets:
+                                {{#each sujets}}
+                                    <span class="sujet">{{this}}</span>
+                                {{/each}}
+                            </span>
+                        {{/if}}
+                        </div>
+                    {{/if}}
+                </li>
+            {{/each}}
+        </script>
+        <script src="main.js"></script>
+    </body>
+</html>    
+        

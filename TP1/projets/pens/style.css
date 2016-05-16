@@ -1,0 +1,35 @@
+@import "../../common/common_style.css";
+
+.titre{
+    color: gold;
+    font-size: 115%;
+}
+
+.pens-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: gold;
+    border-radius: 25px;
+    padding: 1%;
+    align-items: center;
+    justify-content: center;
+}
+
+.pens-item{
+    width: 49%;
+    min-width: 400px;
+    margin: 5px;
+}
+
+.titre a{
+    color:aqua;
+}
+
+.titre a:visited{
+    color: green;
+}
+
+.titre a:hover{
+    color:red;
+}
+

@@ -1,0 +1,58 @@
+{
+  "projets": [
+    {
+      "nom":"GitHub",
+      "dir":"github",
+      "desc":"Mon projet de site web publié sur GitHub"
+    },
+    {
+      "nom": "Langues",
+      "dir": "langues",
+      "desc": "Pratique de l'utilisation des sélecteurs et de la mise en page avec CSS3",
+      "sujets": [
+        "CSS3",
+        "HTML5",
+        "Sélecteurs"
+      ]
+    },
+    {
+      "nom": "Pens",
+      "dir": "pens",
+      "desc": "Exercises que j'ai fait sur CodePen"
+    },
+    {
+      "nom": "Youtube",
+      "dir": "youtube"
+    },
+    {
+      "nom": "Tutoriel",
+      "dir": "tutoriel"
+    },
+    {
+      "nom": "Todo",
+      "dir": "todo",
+      "desc": "Application de todo fait en javascript"
+    },
+    {
+      "nom": "Todo",
+      "dir": "todo",
+      "desc": "Application de todo fait en javascript",
+      "color": "classique",
+      "param": "?skin="
+    },
+    {
+      "nom": "Todo",
+      "dir": "todo",
+      "desc": "Application de todo fait en javascript",
+      "color": "blue",
+      "param": "?skin=blue-on-orange"
+    },
+    {
+      "nom": "Todo",
+      "dir": "todo",
+      "desc": "Application de todo fait en javascript",
+      "color": "orange",
+      "param": "?skin=orange-on-blue"
+    }
+  ]
+}

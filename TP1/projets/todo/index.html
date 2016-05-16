@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pens</title>
+        <link rel="stylesheet/less" type="text/css" href="styles.less" />
+        <script src="less.js" type="text/javascript"></script>
+        <script src="../../common/favicon.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="retour"><a href="../home/index.html">Retour a l'acceuil</a>
+            <div>
+                <span>Skin:</span>
+                <select id="skinSelector">
+                    <option value="" selected>Red on Black</option>
+                    <option value="blue-on-orange">Blue on Orange</option>
+                    <option value="orange-on-blue">Orange on Blue</option>
+                </select>
+            </div>
+        </div>
+        <h1>Todo</h1>
+        <div class="containerTodo">
+            <header>
+                <span class="hideSmall">Todo</span>
+                <input type="text" id="input" placeholder="Entrez ici..." autofocus/>
+            </header>
+            <div class="alltasks">
+                <template>
+                    <article>
+                        <input type="checkbox" class="checkbox">
+                        <div class="text" tabindex='0' contenteditable>
+                        Default
+                        </div>
+                        <img src="../../images/delete64.png" alt="delete" tabindex="0">
+                    </article>
+                </template>
+                <div id="todolist"></div>
+                <div id="donelist"></div>
+            </div>
+        </div>
+        <div class="footerButtons">
+            <button id="allDoneButton">
+                <img src="../../images/checkbox.png" alt="checkbox"> Marquer toutes les tâches comme complétées
+            </button>
+            <button id="deleteDoneButton">
+                <img src="../../images/delete64.png" alt="delete"> Effacer les tâches complétées
+            </button>
+        </div>
+    <script src="main.js"></script>
+    </body>
+</html>
+
+<!--<article>-->
+<!--<input type="checkbox" class="checkbox">-->
+<!--<div class="text" tabindex='0' contenteditable>-->
+<!--Chose à faireawdwad awdaww awdaw daw awd awda wdaw dawd awd-->
+<!--</div>-->
+<!--<img src="../../images/delete64.png" alt="delete" tabindex="0">-->
+<!--</article>-->
+<!--<article>-->
+<!--<input type="checkbox" class="checkbox">-->
+<!--<div class="text" tabindex='0' contenteditable>-->
+<!--Chose à faire-->
+<!--</div>-->
+<!--<img src="../../images/delete64.png" alt="delete" tabindex="0">-->
+<!--</article>-->
+<!--<article>-->
+<!--<input type="checkbox" class="checkbox">-->
+<!--<div class="text" tabindex='0' contenteditable>-->
+<!--Chose à faire-->
+<!--</div>-->
+<!--<img src="../../images/delete64.png" alt="delete" tabindex="0">-->
+<!--</article>-->

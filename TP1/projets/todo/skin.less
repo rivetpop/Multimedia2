@@ -1,0 +1,247 @@
+.skin(
+  @main-color: red;
+  @background-color: black;
+  @highlight-color: white;
+  @flash-color: lime;
+) {
+  @media (max-width: 361px){
+    header input{
+      width: 90%;
+      display: block;
+      margin: auto;
+    }
+
+    .hideSmall{
+      display: none;
+    }
+  }
+
+  @media (max-height: 480px){
+    body{
+      margin-top: -100px;
+    }
+
+    .retour{
+      background: green;
+      margin-right: -175px;
+      margin-top: -30px;
+    }
+
+    .retour:hover, .retour:focus{
+
+      margin-right: 0;
+      margin-top: 0;
+      opacity: 1.0;
+    }
+  }
+
+  .retour{
+    transition: 2s;
+    text-align: center;
+    span{
+      font-size: 75%;
+      color: @main-color;
+    }
+    select{
+      font-size:75%;
+    }
+    div{
+      margin-top: 5px;
+    }
+  }
+
+  .hideSmall{
+    transition: display 2s;
+  }
+
+  body{
+    transition: 2s;
+    background-color: @background-color;
+  }
+
+  h1{
+    color: @main-color;
+    font-family: Pacifico;
+  }
+
+  .containerTodo{
+    border: solid;
+    border-color: @main-color;
+    border-radius: 50px;
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    animation-name: glowing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes glowing{
+    0%{box-shadow: inset 0 0 0px @main-color;}
+    50%{box-shadow: inset 0 0 50px @main-color;}
+    100%{box-shadow: inset 0 0 0px @main-color;}
+  }
+
+  header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .hideSmall{
+    color: @main-color;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+
+  #input{
+    background-color: @main-color;
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: inset 0px 0px 15px @background-color;
+    width: 75%;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  ::-webkit-input-placeholder {
+    color: rgba(0,0,0, 0.4);
+  }
+
+  ::-moz-placeholder {
+    color: rgba(0,0,0,0.4);
+    font-weight: bold;
+  }
+
+  .alltasks{
+    justify-items: center;
+  }
+
+  article{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    width: 90%;
+
+    *{
+      transition: 0.5s;
+    }
+
+    img{
+      &:hover{
+        box-shadow: 0px 0px 15px 3px @highlight-color;
+        background: @highlight-color;
+        border-radius: 8px;
+      }
+      &:focus{
+        box-shadow: 0px 0px 15px 3px @highlight-color;
+        background: @highlight-color;
+        border-radius: 8px;
+      }
+    }
+
+    input{
+      &:hover{
+        box-shadow: 0px 0px 10px 3px @highlight-color;
+      }
+      &:focus{
+        box-shadow: 0px 0px 10px 3px @highlight-color;
+      }
+    }
+  }
+
+  img{
+    width: 15px;
+  }
+
+  .text{
+    color: @highlight-color;
+    box-sizing: border-box;
+    text-align: left;
+    margin-left: 15px;
+    margin-right: 10px;
+    line-height: 15px;
+    padding: 4px;
+    flex: 1;
+
+    &:focus {
+      background-color: @highlight-color;
+      border-radius: 5px;
+      color: @background-color;
+      font-weight: bold;
+    }
+    &:hover{
+      background-color: rgba(250,250,250,0.3);
+      border-left: 5px solid @highlight-color;
+      border-right: 5px solid @highlight-color;
+      border-radius: 3px;
+      color: @highlight-color;
+      font-weight: normal;
+    }
+  }
+
+  #donelist{
+    text-decoration: line-through;
+    color: @main-color;
+    opacity: 0.6;
+  }
+
+  #todolist{
+    &:empty::after{
+      content: "Veuillez entrer une nouvelle tâche à faire svp!";
+      font-style: italic;
+      font-family: serif;
+      color: @flash-color;
+    }
+  }
+
+  .footerButtons{
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    display: flex;
+    background: @highlight-color;
+    opacity: 0.7;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+
+    button{
+      border: solid 1px gray;
+      color: cyan;
+      background-color: @highlight-color;
+      mix-blend-mode: difference;
+      padding: 5px;
+      cursor: pointer;
+      flex: 1;
+      -webkit-transition: 1s ease-in-out;
+      -moz-transition: 1s ease-in-out;
+      -ms-transition: 1s ease-in-out;
+      -o-transition: 1s ease-in-out;
+      transition: 1s ease-in-out;
+
+      &:hover{
+        text-shadow: 2px 2px 2px #0088ff;
+        color: #0088ff;
+      }
+
+      &:focus{
+        text-shadow: 2px 2px 2px #0088ff;
+        color: #0088ff;
+      }
+
+      &:disabled{
+        display:none;
+      }
+    }
+  }
+
+
+}

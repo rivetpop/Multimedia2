@@ -1,0 +1,4 @@
+{
+  "in": "styles.css",
+  "out": "styles.fixed.css"
+}

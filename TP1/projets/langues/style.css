@@ -1,0 +1,36 @@
+@import "../../common/common_style.css";
+
+iframe{
+    min-height: 1500px;
+    border: none;
+}
+
+h1{
+    color: gold;
+}
+
+.container{
+    border: solid;
+    border-color: red;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+button{
+    font-size: 60%;
+    font-weight: bold;
+    width: 100%;
+}
+
+.retour{
+    text-align: center;
+}
+
+.retour button{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+
+
+

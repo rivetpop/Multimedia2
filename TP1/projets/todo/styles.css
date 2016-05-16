@@ -1,0 +1,626 @@
+@charset "UTF-8";
+@import "../../common/common_style.css";
+@media (max-width: 361px) {
+  :root header input {
+    width: 90%;
+    display: block;
+    margin: auto;
+  }
+  :root .hideSmall {
+    display: none;
+  }
+}
+@media (max-height: 480px) {
+  :root body {
+    margin-top: -100px;
+  }
+  :root .retour {
+    background: green;
+    margin-right: -175px;
+    margin-top: -30px;
+  }
+  :root .retour:hover,
+  :root .retour:focus {
+    margin-right: 0;
+    margin-top: 0;
+    opacity: 1.0;
+  }
+}
+:root .retour {
+  transition: 2s;
+  text-align: center;
+}
+:root .retour span {
+  font-size: 75%;
+  color: red;
+}
+:root .retour select {
+  font-size: 75%;
+}
+:root .retour div {
+  margin-top: 5px;
+}
+:root .hideSmall {
+  transition: display 2s;
+}
+:root body {
+  transition: 2s;
+  background-color: black;
+}
+:root h1 {
+  color: red;
+  font-family: Pacifico;
+}
+:root .containerTodo {
+  border: solid;
+  border-color: red;
+  border-radius: 50px;
+  padding: 15px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  animation-name: glowing;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes glowing {
+  0% {
+    box-shadow: inset 0 0 0px red;
+  }
+  50% {
+    box-shadow: inset 0 0 50px red;
+  }
+  100% {
+    box-shadow: inset 0 0 0px red;
+  }
+}
+:root header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+:root .hideSmall {
+  color: red;
+  font-weight: bold;
+  margin-right: 15px;
+}
+:root #input {
+  background-color: red;
+  border: none;
+  padding: 15px;
+  border-radius: 25px;
+  box-shadow: inset 0px 0px 15px black;
+  width: 75%;
+  font-weight: bold;
+  display: inline-block;
+}
+:root ::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+:root ::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+}
+:root .alltasks {
+  justify-items: center;
+}
+:root article {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 5%;
+  width: 90%;
+}
+:root article * {
+  transition: 0.5s;
+}
+:root article img:hover {
+  box-shadow: 0px 0px 15px 3px white;
+  background: white;
+  border-radius: 8px;
+}
+:root article img:focus {
+  box-shadow: 0px 0px 15px 3px white;
+  background: white;
+  border-radius: 8px;
+}
+:root article input:hover {
+  box-shadow: 0px 0px 10px 3px white;
+}
+:root article input:focus {
+  box-shadow: 0px 0px 10px 3px white;
+}
+:root img {
+  width: 15px;
+}
+:root .text {
+  color: white;
+  box-sizing: border-box;
+  text-align: left;
+  margin-left: 15px;
+  margin-right: 10px;
+  line-height: 15px;
+  padding: 4px;
+  flex: 1;
+}
+:root .text:focus {
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+}
+:root .text:hover {
+  background-color: rgba(250, 250, 250, 0.3);
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+  border-radius: 3px;
+  color: white;
+  font-weight: normal;
+}
+:root #donelist {
+  text-decoration: line-through;
+  color: red;
+  opacity: 0.6;
+}
+:root #todolist:empty::after {
+  content: "Veuillez entrer une nouvelle tâche à faire svp!";
+  font-style: italic;
+  font-family: serif;
+  color: lime;
+}
+:root .footerButtons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  background: white;
+  opacity: 0.7;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+:root .footerButtons button {
+  border: solid 1px gray;
+  color: cyan;
+  background-color: white;
+  mix-blend-mode: difference;
+  padding: 5px;
+  cursor: pointer;
+  flex: 1;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+:root .footerButtons button:hover {
+  text-shadow: 2px 2px 2px #0088ff;
+  color: #0088ff;
+}
+:root .footerButtons button:focus {
+  text-shadow: 2px 2px 2px #0088ff;
+  color: #0088ff;
+}
+:root .footerButtons button:disabled {
+  display: none;
+}
+@media (max-width: 361px) {
+  :root.blue-on-orange header input {
+    width: 90%;
+    display: block;
+    margin: auto;
+  }
+  :root.blue-on-orange .hideSmall {
+    display: none;
+  }
+}
+@media (max-height: 480px) {
+  :root.blue-on-orange body {
+    margin-top: -100px;
+  }
+  :root.blue-on-orange .retour {
+    background: green;
+    margin-right: -175px;
+    margin-top: -30px;
+  }
+  :root.blue-on-orange .retour:hover,
+  :root.blue-on-orange .retour:focus {
+    margin-right: 0;
+    margin-top: 0;
+    opacity: 1.0;
+  }
+}
+:root.blue-on-orange .retour {
+  transition: 2s;
+  text-align: center;
+}
+:root.blue-on-orange .retour span {
+  font-size: 75%;
+  color: blue;
+}
+:root.blue-on-orange .retour select {
+  font-size: 75%;
+}
+:root.blue-on-orange .retour div {
+  margin-top: 5px;
+}
+:root.blue-on-orange .hideSmall {
+  transition: display 2s;
+}
+:root.blue-on-orange body {
+  transition: 2s;
+  background-color: orange;
+}
+:root.blue-on-orange h1 {
+  color: blue;
+  font-family: Pacifico;
+}
+:root.blue-on-orange .containerTodo {
+  border: solid;
+  border-color: blue;
+  border-radius: 50px;
+  padding: 15px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  animation-name: glowing;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes glowing {
+  0% {
+    box-shadow: inset 0 0 0px blue;
+  }
+  50% {
+    box-shadow: inset 0 0 50px blue;
+  }
+  100% {
+    box-shadow: inset 0 0 0px blue;
+  }
+}
+:root.blue-on-orange header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+:root.blue-on-orange .hideSmall {
+  color: blue;
+  font-weight: bold;
+  margin-right: 15px;
+}
+:root.blue-on-orange #input {
+  background-color: blue;
+  border: none;
+  padding: 15px;
+  border-radius: 25px;
+  box-shadow: inset 0px 0px 15px orange;
+  width: 75%;
+  font-weight: bold;
+  display: inline-block;
+}
+:root.blue-on-orange ::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+:root.blue-on-orange ::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+}
+:root.blue-on-orange .alltasks {
+  justify-items: center;
+}
+:root.blue-on-orange article {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 5%;
+  width: 90%;
+}
+:root.blue-on-orange article * {
+  transition: 0.5s;
+}
+:root.blue-on-orange article img:hover {
+  box-shadow: 0px 0px 15px 3px magenta;
+  background: magenta;
+  border-radius: 8px;
+}
+:root.blue-on-orange article img:focus {
+  box-shadow: 0px 0px 15px 3px magenta;
+  background: magenta;
+  border-radius: 8px;
+}
+:root.blue-on-orange article input:hover {
+  box-shadow: 0px 0px 10px 3px magenta;
+}
+:root.blue-on-orange article input:focus {
+  box-shadow: 0px 0px 10px 3px magenta;
+}
+:root.blue-on-orange img {
+  width: 15px;
+}
+:root.blue-on-orange .text {
+  color: magenta;
+  box-sizing: border-box;
+  text-align: left;
+  margin-left: 15px;
+  margin-right: 10px;
+  line-height: 15px;
+  padding: 4px;
+  flex: 1;
+}
+:root.blue-on-orange .text:focus {
+  background-color: magenta;
+  border-radius: 5px;
+  color: orange;
+  font-weight: bold;
+}
+:root.blue-on-orange .text:hover {
+  background-color: rgba(250, 250, 250, 0.3);
+  border-left: 5px solid magenta;
+  border-right: 5px solid magenta;
+  border-radius: 3px;
+  color: magenta;
+  font-weight: normal;
+}
+:root.blue-on-orange #donelist {
+  text-decoration: line-through;
+  color: blue;
+  opacity: 0.6;
+}
+:root.blue-on-orange #todolist:empty::after {
+  content: "Veuillez entrer une nouvelle tâche à faire svp!";
+  font-style: italic;
+  font-family: serif;
+  color: pink;
+}
+:root.blue-on-orange .footerButtons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  background: magenta;
+  opacity: 0.7;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+:root.blue-on-orange .footerButtons button {
+  border: solid 1px gray;
+  color: cyan;
+  background-color: magenta;
+  mix-blend-mode: difference;
+  padding: 5px;
+  cursor: pointer;
+  flex: 1;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+:root.blue-on-orange .footerButtons button:hover {
+  text-shadow: 2px 2px 2px #0088ff;
+  color: #0088ff;
+}
+:root.blue-on-orange .footerButtons button:focus {
+  text-shadow: 2px 2px 2px #0088ff;
+  color: #0088ff;
+}
+:root.blue-on-orange .footerButtons button:disabled {
+  display: none;
+}
+@media (max-width: 361px) {
+  :root.orange-on-blue header input {
+    width: 90%;
+    display: block;
+    margin: auto;
+  }
+  :root.orange-on-blue .hideSmall {
+    display: none;
+  }
+}
+@media (max-height: 480px) {
+  :root.orange-on-blue body {
+    margin-top: -100px;
+  }
+  :root.orange-on-blue .retour {
+    background: green;
+    margin-right: -175px;
+    margin-top: -30px;
+  }
+  :root.orange-on-blue .retour:hover,
+  :root.orange-on-blue .retour:focus {
+    margin-right: 0;
+    margin-top: 0;
+    opacity: 1.0;
+  }
+}
+:root.orange-on-blue .retour {
+  transition: 2s;
+  text-align: center;
+}
+:root.orange-on-blue .retour span {
+  font-size: 75%;
+  color: orange;
+}
+:root.orange-on-blue .retour select {
+  font-size: 75%;
+}
+:root.orange-on-blue .retour div {
+  margin-top: 5px;
+}
+:root.orange-on-blue .hideSmall {
+  transition: display 2s;
+}
+:root.orange-on-blue body {
+  transition: 2s;
+  background-color: blue;
+}
+:root.orange-on-blue h1 {
+  color: orange;
+  font-family: Pacifico;
+}
+:root.orange-on-blue .containerTodo {
+  border: solid;
+  border-color: orange;
+  border-radius: 50px;
+  padding: 15px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  animation-name: glowing;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes glowing {
+  0% {
+    box-shadow: inset 0 0 0px orange;
+  }
+  50% {
+    box-shadow: inset 0 0 50px orange;
+  }
+  100% {
+    box-shadow: inset 0 0 0px orange;
+  }
+}
+:root.orange-on-blue header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+:root.orange-on-blue .hideSmall {
+  color: orange;
+  font-weight: bold;
+  margin-right: 15px;
+}
+:root.orange-on-blue #input {
+  background-color: orange;
+  border: none;
+  padding: 15px;
+  border-radius: 25px;
+  box-shadow: inset 0px 0px 15px blue;
+  width: 75%;
+  font-weight: bold;
+  display: inline-block;
+}
+:root.orange-on-blue ::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+:root.orange-on-blue ::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+}
+:root.orange-on-blue .alltasks {
+  justify-items: center;
+}
+:root.orange-on-blue article {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 5%;
+  width: 90%;
+}
+:root.orange-on-blue article * {
+  transition: 0.5s;
+}
+:root.orange-on-blue article img:hover {
+  box-shadow: 0px 0px 15px 3px pink;
+  background: pink;
+  border-radius: 8px;
+}
+:root.orange-on-blue article img:focus {
+  box-shadow: 0px 0px 15px 3px pink;
+  background: pink;
+  border-radius: 8px;
+}
+:root.orange-on-blue article input:hover {
+  box-shadow: 0px 0px 10px 3px pink;
+}
+:root.orange-on-blue article input:focus {
+  box-shadow: 0px 0px 10px 3px pink;
+}
+:root.orange-on-blue img {
+  width: 15px;
+}
+:root.orange-on-blue .text {
+  color: pink;
+  box-sizing: border-box;
+  text-align: left;
+  margin-left: 15px;
+  margin-right: 10px;
+  line-height: 15px;
+  padding: 4px;
+  flex: 1;
+}
+:root.orange-on-blue .text:focus {
+  background-color: pink;
+  border-radius: 5px;
+  color: blue;
+  font-weight: bold;
+}
+:root.orange-on-blue .text:hover {
+  background-color: rgba(250, 250, 250, 0.3);
+  border-left: 5px solid pink;
+  border-right: 5px solid pink;
+  border-radius: 3px;
+  color: pink;
+  font-weight: normal;
+}
+:root.orange-on-blue #donelist {
+  text-decoration: line-through;
+  color: orange;
+  opacity: 0.6;
+}
+:root.orange-on-blue #todolist:empty::after {
+  content: "Veuillez entrer une nouvelle tâche à faire svp!";
+  font-style: italic;
+  font-family: serif;
+  color: magenta;
+}
+:root.orange-on-blue .footerButtons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  background: pink;
+  opacity: 0.7;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+:root.orange-on-blue .footerButtons button {
+  border: solid 1px gray;
+  color: cyan;
+  background-color: pink;
+  mix-blend-mode: difference;
+  padding: 5px;
+  cursor: pointer;
+  flex: 1;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+:root.orange-on-blue .footerButtons button:hover {
+  text-shadow: 2px 2px 2px #0088ff;
+  color: #0088ff;
+}
+:root.orange-on-blue .footerButtons button:focus {
+  text-shadow: 2px 2px 2px #0088ff;
+  color: #0088ff;
+}
+:root.orange-on-blue .footerButtons button:disabled {
+  display: none;
+}

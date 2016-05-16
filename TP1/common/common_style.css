@@ -1,0 +1,30 @@
+@import "normalize.css";
+
+body{
+    background-color: black;
+    padding: 2%;
+}
+
+.retour{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding: 20px;
+    font-size: 150%;
+    box-shadow: 0px 0px 10px white;
+    border-bottom-left-radius: 25px;
+    background: radial-gradient(hsl(0,0%,50%), hsl(0,0%,10%));
+    z-index: 1;
+}
+
+.retour a{
+    color: green;
+}
+
+.retour:hover{
+    background: radial-gradient(hsl(0,0%,60%), hsl(0,0%,10%));
+}
+
+
+
+

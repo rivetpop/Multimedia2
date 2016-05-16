@@ -1,0 +1,163 @@
+@import "../../common/common_style.css";
+
+h1{
+    color:white;
+    background: black;
+    mix-blend-mode: multiply;
+    text-align: center;
+    font-family: Pacifico;
+}
+
+h2{
+    color: fuchsia;
+    text-align: center;
+    font-family: Pacifico;
+}
+
+#image{
+    text-align: center;
+    transition: 2s;
+}
+
+img{
+    width: 80%;
+    border: solid;
+    border-color: white;
+    border-radius: 15px;
+    -webkit-filter: grayscale();
+    filter: grayscale(100%);
+    -webkit-transform: rotate(2deg);
+    transform: rotate(3deg);
+}
+
+p{
+    color: gold;
+    text-indent: 5%;
+}
+
+li{
+    color: gold;
+}
+
+
+a{
+    color:aqua;
+    transition: 2s;
+}
+
+a:visited{
+    color: green;
+}
+
+a:hover{
+    color: red;
+    text-shadow: 75px 0px yellow;
+}
+
+.global{
+    max-width: 650px;
+    border: solid;
+    border-radius: 25px;
+    border-color: red;
+    padding: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: glowing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+.sourdineDiv{
+    color: gold;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-bottom: solid;
+    border-left: solid;
+    border-color: red;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 25px;
+    display: flex;
+}
+
+.sourdine{
+    padding: 10px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 25px;
+}
+.sourdine:hover{
+    background: radial-gradient(hsl(0,0%,60%), hsl(0,0%,10%));
+    cursor: pointer;
+}
+
+#sourdineCheckBox:hover{
+    cursor: pointer;
+}
+
+@keyframes glowing{
+    0%{box-shadow: inset 0 0 0px #ff0000;}
+    50%{box-shadow: inset 0 0 50px #ff0000;}
+    100%{box-shadow: inset 0 0 0px #ff0000;}
+}
+
+span{
+    text-decoration: underline;
+    color:lime;
+}
+
+.nom{
+    background: repeating-linear-gradient(to right, red 10%, yellow 20%, red 10%);
+}
+
+li div{
+     background: black;
+     border: solid red 2px;
+     border-radius: 10%;
+     font-size: 70%;
+     min-width: 100px;
+     opacity: 0;
+     padding: 10px;
+     position: absolute;
+     right: 0;
+     top: -10px;
+     transform: scale(0.4);
+     width: 20%;
+     z-index: 2;
+ }
+
+li{
+    position: relative;
+}
+
+li:hover div{
+    opacity: 1;
+    transition: 1s;
+    transform: scale(1);
+}
+
+.sujets{
+    color: red;
+    text-decoration: none;
+}
+
+.sujet{
+    text-decoration: none;
+    color: cyan;
+}
+
+.sujet:nth-child(odd){
+    color: blue;
+}
+
+.color-classique{
+    color:red;
+}
+
+.color-blue{
+    color:blue;
+}
+
+.color-orange{
+    color:orange;
+}

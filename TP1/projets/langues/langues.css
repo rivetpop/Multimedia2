@@ -1,0 +1,234 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+h1{
+    color: red;
+    font-family: Pacifico;
+}
+
+p{
+    color: gold;
+}
+
+.lorem{
+    
+}
+
+#nombres > p{
+    color: fuchsia;
+    font-family: Pacifico;
+    text-indent: 10%;
+    margin-top: -25px;
+    font-size: 120%;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width:100%;
+    counter-reset: section
+}
+
+main a{
+    color: aqua;
+}
+
+article::before{
+    counter-increment: section;
+    content: counter(section);
+    font-size: 250%;
+    color: gold;
+}
+
+article{
+    box-shadow: 0px 0px 10px white;
+    border-radius: 10px;
+    min-width: 300px;
+    padding: 10px;
+    text-align: center;    
+    margin: 5px;
+    flex: 1;
+    
+}
+
+ol{
+    display: inline-block;
+}
+
+li{
+    text-align: justify;
+    padding-left: 10px;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+article:nth-child(1){
+    background: linear-gradient(#660000, #ff0000);
+    order: 1;
+}
+
+article:nth-child(1) li{
+    background-color: firebrick;
+}
+
+article:nth-child(1) li:nth-child(odd){
+    background-color: crimson;
+}
+
+article:nth-child(1) li:first-child{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+article:nth-child(1) li:last-child{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+article:nth-child(2){
+    background: linear-gradient(#003300, #00ff00);
+    order: 2;
+}
+
+article:nth-child(2) li:nth-child(odd){
+    background-color: forestgreen;
+}
+
+article:nth-child(2) li{
+    background-color: green;
+}
+
+article:nth-child(2) li:first-child{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+article:nth-child(2) li:last-child{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+article:nth-child(5){
+    background-color: black;
+    order: 3;
+}
+
+article:nth-child(5) ol{
+    color:blue;
+}
+
+article:nth-child(3){
+    background: linear-gradient(#660000, #ff0000);
+    order: 4;
+}
+
+article:nth-child(3) li:nth-child(odd){
+    background-color: crimson;
+}
+
+article:nth-child(3) li{
+    background-color: firebrick;
+}
+
+article:nth-child(3) li:first-child{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+article:nth-child(3) li:last-child{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+article:nth-child(4){
+    background: linear-gradient(#003300, #00ff00);
+    order: 5;
+}
+
+article:nth-child(4) li:nth-child(odd){
+    background-color: forestgreen;
+}
+
+article:nth-child(4) li{
+    background-color: green;
+}
+
+article:nth-child(4) li:first-child{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+article:nth-child(4) li:last-child{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+article:nth-child(6){
+    background: linear-gradient(#003300, #00ff00);
+    order: 6;
+}
+
+article:nth-child(6) span{
+    float: right;
+    padding-left: 15px;
+    color: darkorange;
+}
+
+article:nth-child(7){
+    background: linear-gradient(#660000, #ff0000);
+    order: 7;
+}
+
+article:nth-child(7) li{
+    background-color: firebrick;
+}
+
+article:nth-child(7) li:nth-child(odd){
+    background-color: crimson;
+}
+
+article:nth-child(7) li:first-child{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+article:nth-child(7) li:last-child{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+article:nth-child(8){
+    background-color: black;
+    order: 8;
+}
+
+article:nth-child(8) ol{
+    color: blue;
+}
+
+article:nth-child(8) div{
+   display: inline-flex
+}
+
+article:nth-child(8) span:nth-child(1){
+    color: darkorange;
+    width: 70px;
+    padding-right: 50px;
+}
+
+article:nth-child(8) span:nth-child(2){
+    color: white;
+    width: 50px;
+
+}
+
+article:nth-child(8) span:nth-child(3){
+    float: right;
+}
+
+footer{
+    text-align: center;
+}
+
+
+
+
